@@ -49,6 +49,19 @@ For example,
 ```
 docker run -it -v <host_path>:<container_path> <image_name> /bin/bash
 ```
+## To get  details of the volume:
+
+ Docker inspect command will give all the details about the volume.
+ 
+docker volume inspect Volume_name
+
+## To delete a volume
+
+docker volume rm volume_name
+
+We can delete multiple volumes at a time by using this command:
+
+ docker volume rm Volume1 Volume2 ..
 
 ## Key Differences between Volumes and Bind Directory on a host as a Mount
 
